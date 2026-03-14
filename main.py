@@ -1,3 +1,4 @@
+from survey import get_user_answer, user_interference
 import json
 
 with open("races.json") as f:
@@ -6,30 +7,13 @@ with open("races.json") as f:
 with open("survey.json") as f1:
     survey = json.load(f1)
 
-def user_interference():
+
+def display():
 
     print("\n| -------------------------------------- |")
     print("|  Welcome to the Skyrim Race Chooser!   |")
     print("| -------------------------------------- |\n")
 
-    chosen_skills = set()
-
-    for question in survey["questions"]:
-        print(question["question"])
-        options = question["options"]
-
-        for i, option in enumerate(options, start=1):
-            print("(",i, ")", option["text"])
-
-        choice = int(input("Choose option: "))
-        selected_option = options[choice - 1]
-
-        for skill in selected_option["skills"]:
-            chosen_skills.add(skill)
-
-        print()
-
-    return chosen_skills
 
 
 def evaluate_races(races, chosen_skills):
@@ -51,9 +35,8 @@ def evaluate_races(races, chosen_skills):
                 scores[race] += 1
     return scores
 
-chosen_skills = user_interference()
 def rank_results():
-    scores = evaluate_races(races, chosen_skills)  
+    scores = evaluate_races(races, user_interference())  
     sorted_scores = sorted(scores.items(), key=lambda item: item[1], reverse=True)
     print("The results (Ranked best to worst.)")
     for race, score in sorted_scores:
