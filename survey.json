@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "id": "combat_style",
+      "question": "Which combat style sounds best?",
+      "options": [
+        { "text": "Melee weapons", "skills": ["One-Handed", "Two-Handed", "Block"] },
+        { "text": "Bows", "skills": ["Archery"] },
+        { "text": "Magic", "skills": ["Destruction", "Conjuration"] },
+        { "text": "Mix", "skills": ["One-Handed", "Destruction"] }
+      ]
+    },
+    {
+      "id": "armor",
+      "question": "Preferred armor?",
+      "options": [
+        { "text": "Light armor", "skills": ["Light Armor"] },
+        { "text": "Heavy armor", "skills": ["Heavy Armor"] },
+        { "text": "Robes", "skills": ["Alteration", "Restoration"] }
+      ]
+    },
+    {
+    "id": "magic_importance",
+    "question": "Is magic important to your build?",
+    "options": [
+        { "text": "Yes, offensive magic", "skills": ["Destruction"] },
+        { "text": "Yes, healing magic", "skills": ["Restoration"] },
+        { "text": "Yes, summoning magic", "skills": ["Conjuration"] },
+        { "text": "No", "skills": [] }
+    ]
+    },
+    {
+      "id": "stealth",
+      "question": "Would you like stealth gameplay?",
+      "options": [
+        { "text": "Yes", "skills": ["Sneak", "Lockpicking", "Pickpocket"] },
+        { "text": "No", "skills": [] }
+      ]
+    },
+    {
+      "id": "defense",
+      "question": "How do you defend yourself?",
+      "options": [
+        { "text": "Blocking attacks with a shield", "skills": ["Block"] },
+        { "text": "Strong armor", "skills": ["Heavy Armor"] },
+        { "text": "Dodging attacks with agile movement", "skills": ["Light Armor"] }
+      ]
+    },
+    {
+      "id": "weapon_type",
+      "question": "Do you prefer spectral weapons or physical weapons?",
+      "options": [
+        { "text": "Spectral weapons", "skills": ["Conjuration"] },
+        { "text": "Physical weapons", "skills": ["One-Handed", "Two-Handed", "Archery"] }
+      ]
+    },
+    {
+      "id": "magic_world",
+      "question": "Do you like messing with the world around you using magic?",
+      "options": [
+        { "text": "Yes", "skills": ["Illusion", "Alteration"] },
+        { "text": "No", "skills": [] }
+      ]
+    },
+    {
+      "id": "craft_magic_items",
+      "question": "Do you create potions yourself or enchant weapons and armor?",
+      "options": [
+        { "text": "Create potions", "skills": ["Alchemy"] },
+        { "text": "Enchant weapons and armor", "skills": ["Enchanting"] },
+        { "text": "Both", "skills": ["Alchemy", "Enchanting"] },
+        { "text": "Neither", "skills": [] }
+      ]
+    },
+    {
+      "id": "smithing",
+      "question": "Do you prefer crafting weapons and armor yourself?",
+      "options": [
+        { "text": "Yes", "skills": ["Smithing"] },
+        { "text": "No", "skills": [] }
+      ]
+    }
+  ]
+}
