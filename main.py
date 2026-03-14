@@ -5,6 +5,11 @@ with open("races.json") as f:
 
 chosen_skills = {"Conjuration", "Light Armor",  "Speech",  "Smithing",  "Lockpicking"}
 
+def user_interference():
+    print("\n| ----------------------------------- |")
+    print("| Welcome to the Skyrim Race Chooser! |")
+    print("| ----------------------------------- |\n")
+user_interference()
 def evaluate_races(races, chosen_skills):
 
     scores = {}
@@ -24,6 +29,12 @@ def evaluate_races(races, chosen_skills):
                 scores[race] += 1
     return scores
 
-scores = evaluate_races(races, chosen_skills)  
 
-print(scores)
+def rank_results():
+    scores = evaluate_races(races, chosen_skills)  
+    sorted_scores = sorted(scores.items(), key=lambda item: item[1], reverse=True)
+    
+    for race, score in sorted_scores:
+        print(race, score)
+
+rank_results()
