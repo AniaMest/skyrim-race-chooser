@@ -26,7 +26,7 @@
         { "text": "Yes, offensive magic", "skills": ["Destruction"] },
         { "text": "Yes, healing magic", "skills": ["Restoration"] },
         { "text": "Yes, summoning magic", "skills": ["Conjuration"] },
-        { "text": "No", "skills": [] }
+        { "text": "No / Others", "skills": [] }
     ]
     },
     {
@@ -52,6 +52,15 @@
       "options": [
         { "text": "Spectral weapons", "skills": ["Conjuration"] },
         { "text": "Physical weapons", "skills": ["One-Handed", "Two-Handed", "Archery"] }
+      ]
+    },
+    {
+      "id": "combat_style",
+      "question": "What is your preferred malee-combat style?",
+      "options": [
+        { "text": "Swift and light attacks", "skills": ["One-Handed"] },
+        { "text": "Slow but impactful attacks", "skills": ["Two-Handed", "Block"] },
+        { "text": "I'll use only magic", "skills": ["Conjuration","Illusion","Alteration","Restoration","Destruction"] }
       ]
     },
     {
