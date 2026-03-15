@@ -74,11 +74,11 @@
       "question": "Do you prefer spectral weapons or physical weapons?",
       "options": [
         { "text": "Spectral weapons", "skills": ["Conjuration"] },
-        { "text": "Physical weapons", "skills": ["One-Handed", "Two-Handed", "Archery"] }
+        { "text": "Physical weapons", "skills": [] }
       ]
     },
     {
-      "id": "combat_style",
+      "id": "melee_combat_style",
       "question": "What is your preferred melee-combat style?",
       "options": [
         { "text": "Swift and light attacks", "skills": ["One-Handed"] },
