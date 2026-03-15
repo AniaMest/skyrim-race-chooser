@@ -102,9 +102,9 @@ In Skyrim each player race has either 15, 20 or 25 starting points for every ski
 The program goes through each race and evaluates how good a match it's starting skills are to the created skill-set.
 So, these starting skill points determine total scores:
 
-Starting Point: 25 --> +2
-Starting Point: 20 --> +1
-Starting Point: 15 --> +0
+- Starting Point: 25 --> +2
+- Starting Point: 20 --> +1
+- Starting Point: 15 --> +0
 
 The races are then ranked by their total score.
 ___________________________________
