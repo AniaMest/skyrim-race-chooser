@@ -8,5 +8,35 @@
 <h1>Find out which race suits your next skyrim playthrough!</h1>
 <p>Quiz</p>
 
+<form action="/result" method="POST">
+
+{% for q in questions %}
+
+<h3>{{ q.question }}</h3>
+
+{% for option in q.options %}
+
+<label>
+<input type="radio"
+       name="{{ q.id }}"
+       value="{{ option.text }}"
+       required>
+
+{{ option.text }}
+</label>
+
+<br>
+
+{% endfor %}
+
+<br>
+
+{% endfor %}
+
+<button type="submit">Submit Quiz</button>
+
+</form>
+
+
 </body>
 </html>
