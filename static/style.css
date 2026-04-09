@@ -31,3 +31,26 @@ body {
     font-weight: bold;
 
 }
+
+.description {
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+
+.quiz-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.quiz {
+    background-color: #004eca;
+    color: white;
+    font-size: 22px;
+    padding: 14px 36px;
+}
